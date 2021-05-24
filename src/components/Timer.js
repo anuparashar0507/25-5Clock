@@ -165,7 +165,7 @@ export class Timer extends Component {
       }
       render() {
         return (
-          <div>
+          <div id="container">
             <div className="main-title">25 + 5 Clock</div>
             <TimerLengthControl
               addID="break-increment"
