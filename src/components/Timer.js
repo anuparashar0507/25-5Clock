@@ -123,7 +123,7 @@ export class Timer extends Component {
       }
       warning(_timer) {
         if (_timer < 61) {
-          this.setState({ alarmColor: { color: '#a50d0d' } });
+          this.setState({ alarmColor: { color: '#C20114' } });
         } else {
           this.setState({ alarmColor: { color: 'white' } });
         }
@@ -173,7 +173,7 @@ export class Timer extends Component {
               lengthID="break-length"
               minID="break-decrement"
               onClick={this.setBrkLength}
-              title="Break Length"
+              title="Break"
               titleID="break-label"
             />
             <TimerLengthControl
@@ -182,7 +182,7 @@ export class Timer extends Component {
               lengthID="session-length"
               minID="session-decrement"
               onClick={this.setSeshLength}
-              title="Session Length"
+              title="Session"
               titleID="session-label"
             />
             <div className="timer" style={this.state.alarmColor}>

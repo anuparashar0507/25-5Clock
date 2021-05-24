@@ -4,50 +4,89 @@ body {
   align-items: center;
   max-height: 100vh;
   max-width: 100vw;
-  background: #1098F7;
+  background: #F2F2F2;
   color: white;
   font-size: 30px;
+  font-family :Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   #root {
     height: 91vh;
-    max-width: 99vw;
-    background: #000000;
+    //max-width: 100vw;
+    width: 100vw;
+    background: #333333;
     display: flex;
     justify-content: center;
     align-items: center;
     .main-title {
       font-size: 50px;
-      background: #1098F7;
-      margin-bottom: 20px;
+      background: #CBB301;
+      margin-bottom: 60px;
+      margin-top: -40px;
     }
     .length-control { 
       width: 250px;
     }
     button {
-      background: none;
-      outline: none;
-      border: none;
+      background: #C20114;
+      outline: #C20114;
+      border: #C20114;
       color: white;
       cursor: pointer;
+      font-size: 25px;
+      margin:0 20px 0 20px;
     }
     .btn-level,
     .length-control {
-      display: inline-block;
+    display: flex;
+    background: none;
+    width: auto;
+    font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px 20px 0px;
+      
       .btn-level:nth-child(3) {
-        width: 40px;
+        width: 60px;
+        height: 60px;
+        border: solid 1px #CBB301;
+       // background: #CBB301;
+      }
+      i{
+        background: #C20114;
+        width: 60px;
+        height: 60px;
+      }
+      #break-label
+      {
+        display: inline-flex;
+        align-items: center;
+        border: solid 1px #CBB301;
+       // background: cornflowerblue;
+        width: 120px;
+        height: 60px;
+      }
+      #session-label
+      {
+        display: inline-flex;
+        align-items: center;
+        //background: cornflowerblue;
+        border: solid 1px #CBB301;
+        width: 120px;
+        height: 60px;
       }
     }
     
     .timer {
-      border: 7px solid #1098F7;
-      margin: 20px auto 10px auto;
-      width: 270px;
+      border: 7px solid #CBB301;
+      margin: 20px auto 20px auto;
+      width: 320px;
       height: 160px;
-      border-radius: 50px;
+      border-radius: 10px;
       position: relative;
       .timer-wrapper {
         position: absolute;
         width: 190px;
+        background: none;
         height: 110px;
         left: 50%;
         top: 50%;
@@ -59,7 +98,7 @@ body {
         font-size: 80px;
       }
       .timer-control button:active {
-        color: #1098F7;
+        color: #C20114;
       }
     }
   }
